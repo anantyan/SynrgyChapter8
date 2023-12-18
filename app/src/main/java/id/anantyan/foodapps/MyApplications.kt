@@ -21,9 +21,4 @@ class MyApplications : Application(), Configuration.Provider {
             .setWorkerFactory(factory)
             .build()
     }
-
-    override fun onCreate() {
-        super.onCreate()
-        throw RuntimeException("Test Crash")
-    }
 }

@@ -5,12 +5,12 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.0034647">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.0041134">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: ktlintCheck ktlintFormat presentation:testDebugUnitTest domain:testDebugUnitTest assembleDebug" time="65.8834177">
+      <testcase classname="fastlane.lanes" name="1: ktlintCheck ktlintFormat presentation:testDebugUnitTest domain:testDebugUnitTest assembleDebug" time="25.8342716">
         
       </testcase>
     

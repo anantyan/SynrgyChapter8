@@ -7,17 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:659083143930:android:ab968b9038dc797e447743",
+        "mobilesdk_app_id": "1:659083143930:android:dcdaae1c55883339447743",
         "android_client_info": {
-          "package_name": "id.anantyan.foodapps"
+          "package_name": "id.anantyan.foodapps.debug"
         }
       },
       "oauth_client": [
         {
-          "client_id": "659083143930-f3vajj1n3v5t3305o7h45jtqu39rul1p.apps.googleusercontent.com",
+          "client_id": "659083143930-1vsm4q3ccaenfvcvqp485hibk5oae4jh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "id.anantyan.foodapps",
+            "package_name": "id.anantyan.foodapps.debug",
             "certificate_hash": "35b3667a71a785f4642045088108882a0edc0d88"
           }
         },

@@ -24,6 +24,10 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-debug"
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -42,22 +46,6 @@ android {
 
     // data binding ini hanya untuk library dari ImagePicker/CapturePhoto :(
     buildFeatures { dataBinding = true }
-
-    flavorDimensions += listOf("ads_fiture")
-    productFlavors {
-        create("ads") {
-            dimension = "ads_fiture"
-            versionNameSuffix = "-ads"
-            targetSdk = 34
-            minSdk = 24
-        }
-        create("nonAds") {
-            dimension = "ads_fiture"
-            versionNameSuffix = "-nonAds"
-            targetSdk = 34
-            minSdk = 24
-        }
-    }
 }
 
 dependencies {

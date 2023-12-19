@@ -55,6 +55,7 @@ jobs:
           lane: ${{inputs.variants}}
 
       - name: Build report Test All Module
+        if: ${{inputs.variants == 'debug'}}
         uses: actions/upload-artifact@v3
         with:
           name: report-test

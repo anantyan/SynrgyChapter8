@@ -1,31 +1,32 @@
-# Synrgy Chapter 7
+# Synrgy Chapter 8
 
 [![Android with Github Action - CI](https://github.com/anantyan/SynrgyChapter8/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/anantyan/SynrgyChapter8/actions/workflows/ci.yaml)
 
+[<img src="https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-built_white.png" width="260" height="115"/>](https://console.firebase.google.com/u/0/project/fir-mvvm-bf0d9/overview)
+
 ### 🚩Table of Contents
 
-[Description](https://github.com/anantyan/SynrgyChapter7#-description)
+[Description](https://github.com/anantyan/SynrgyChapter8#-description)
 
-[Technology and Library](https://github.com/anantyan/SynrgyChapter7#-technology-and-library)
+[Technology and Library](https://github.com/anantyan/SynrgyChapter8#-technology-and-library)
 
-[Snapshoot](https://github.com/anantyan/SynrgyChapter7#%EF%B8%8F-snapshoot)
+[Snapshoot](https://github.com/anantyan/SynrgyChapter8#%EF%B8%8F-snapshoot)
 
-[Capture Video](https://github.com/anantyan/SynrgyChapter7#-capture-video)
+[Capture Video](https://github.com/anantyan/SynrgyChapter8#-capture-video)
 
 ### 📌 Description
 
 The challenge results from the intensive learning of chapter 7 - Which is where the project is about an application listing data about food and beverage recipes that can be seen in one handheld mobile android, as well as details on how to make it up to what tools and recipe ingredients are provided. Thank you for providing a limited free API service, and at least it can be used for learning.
-- https://spoonacular.com/food-api/docs
+
+- https://spoonacular.com/food-api/docs/
 - https://api.imgbb.com/
 
 ***note:*** 
 
-- Applying `Build Flavor` for **Ads** and **Non Ads** Fiture in _Module App_. ✔
-- Applying `Linter Kotlin` using KtLint on the project. ✔
-- Applying `Chucker` for Realtime Report Network API. ✔
-- Applying `Usability Test` in specific fitur (Login Fiture: _Module Presentation_, _Module Domain_). ✔
-
-For running tasks you can use the command line: `./gradlew ktlintCheck` or `./gradlew ktlintFormat` later a report will be generated whether some of the code implemented has errors when checked and auto format when formatted.
+- Applying `CI/CD`. ✔
+- Applying `Deployment with Github Action`. ✔
+- Applying `Performance Monitoring with FIrebase Services`. ✔
+- Applying `Publish on App Distribution in Firebase Services`. ✔
 
 ### 👣 Technology and Library
 

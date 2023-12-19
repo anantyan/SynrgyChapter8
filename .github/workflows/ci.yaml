@@ -84,6 +84,6 @@ jobs:
         with:
           appId: ${{secrets.FIREBASE_APP_ID_RELEASE}}
           serviceCredentialsFileContent: ${{secrets.CREDENTIAL_FILE_CONTENT}}
-          groups: testers
+          groups: release-unsigned
           file: app/build/outputs/apk/${{inputs.variants}}/app-${{inputs.variants}}-unsigned.apk
           releaseNotes: ${{inputs.release_notes}}

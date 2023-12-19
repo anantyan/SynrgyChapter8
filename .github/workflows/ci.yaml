@@ -3,6 +3,14 @@ name: Android with Github Action - CI
 on:
   workflow_dispatch:
     inputs:
+      variants:
+        description: Select Variant
+        required: true
+        default: 'debug'
+        type: choice
+        options:
+          - 'debug'
+          - 'release'
       release_notes:
         type: string
         required: true
@@ -44,7 +52,7 @@ jobs:
       - name: Setup Fastlane
         uses: maierj/fastlane-action@v2.3.0
         with:
-          lane: 'go'
+          lane: ${{inputs.variants}}
 
       - name: Build report Test All Module
         uses: actions/upload-artifact@v3
@@ -54,7 +62,7 @@ jobs:
             presentation/build/reports,
             domain/build/reports
 
-      - name: Build debug Apks
+      - name: Build Apks
         uses: actions/upload-artifact@v3
         with:
           name: generate-apks

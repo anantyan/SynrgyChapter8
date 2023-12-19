@@ -67,3 +67,23 @@ jobs:
         with:
           name: generate-apks
           path: app/build/outputs/apk
+
+      - name: Upload artifact to Firebase App Distribution
+        if: ${{inputs.variants == 'debug'}}
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{secrets.FIREBASE_APP_ID_DEBUG}}
+          serviceCredentialsFileContent: ${{secrets.CREDENTIAL_FILE_CONTENT}}
+          groups: testers
+          file: app/build/outputs/apk/${{inputs.variants}}/app-${{inputs.variants}}.apk
+          releaseNotes: ${{inputs.release_notes}}
+
+      - name: Upload artifact to Firebase App Distribution
+        if: ${{inputs.variants == 'release'}}
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: ${{secrets.FIREBASE_APP_ID_RELEASE}}
+          serviceCredentialsFileContent: ${{secrets.CREDENTIAL_FILE_CONTENT}}
+          groups: testers
+          file: app/build/outputs/apk/${{inputs.variants}}/app-${{inputs.variants}}-unsigned.apk
+          releaseNotes: ${{inputs.release_notes}}

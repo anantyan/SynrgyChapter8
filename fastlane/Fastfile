@@ -17,7 +17,16 @@ default_platform(:android)
 
 platform :android do
   desc "Runs all the tests"
-  lane :go do
-    gradle(task: "ktlintCheck ktlintFormat presentation:testDebugUnitTest domain:testDebugUnitTest assembleRelease")
+  lane :debug do
+    gradle(
+      task: "ktlintCheck ktlintFormat presentation:testDebugUnitTest domain:testDebugUnitTest assemble",
+      build_type: "Debug"
+    )
+  end
+  lane :release do
+    gradle(
+      task: "ktlintFormat assemble",
+      build_type: "Release"
+    )
   end
 end

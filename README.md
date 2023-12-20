@@ -27,6 +27,7 @@ The challenge results from the intensive learning of chapter 7 - Which is where 
 - Applying `Deployment with Github Action`. ✔
 - Applying `Performance Monitoring with FIrebase Services`. ✔
 - Applying `Publish on App Distribution in Firebase Services`. ✔
+- Other artifacts related to AAB Deployment along with Keystore and Private Key are [here](https://1drv.ms/f/s!AsN8Q4PA1Oy5gb4V_S2ernErN1M2nQ?e=Fzyyrd).
 
 ### 👣 Technology and Library
 

@@ -66,7 +66,7 @@ jobs:
           lane: ${{inputs.variants}}
 
       - name: Build report Test All Module
-        if: ${{github.event_name == 'push' && inputs.variants == 'debug'}}
+        if: ${{github.event_name == 'push' || inputs.variants == 'debug'}}
         uses: actions/upload-artifact@v3
         with:
           name: report-test
@@ -81,7 +81,7 @@ jobs:
           path: app/build/outputs/apk
 
       - name: Upload artifact to Firebase App Distribution
-        if: ${{github.event_name == 'push' && inputs.variants == 'debug'}}
+        if: ${{github.event_name == 'push' || inputs.variants == 'debug'}}
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{secrets.FIREBASE_APP_ID_DEBUG}}

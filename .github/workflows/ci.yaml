@@ -54,6 +54,7 @@ jobs:
           ruby-version: '2.7.2'
 
       - name: Setup Fastlane
+        if: ${{github.event_name == 'push' || github.event_name == 'workflow_dispatch'}}
         uses: maierj/fastlane-action@v2.3.0
         with:
           lane: ${{inputs.variants}}

@@ -53,13 +53,13 @@ jobs:
         with:
           ruby-version: '2.7.2'
 
-      - name: Setup Fastlane
+      - name: Setup Fastlane - with Push
         if: ${{github.event_name == 'push'}}
         uses: maierj/fastlane-action@v2.3.0
         with:
           lane: 'debug'
 
-      - name: Setup Fastlane
+      - name: Setup Fastlane - with Workflow Dispatch
         if: ${{github.event_name == 'workflow_dispatch'}}
         uses: maierj/fastlane-action@v2.3.0
         with:
@@ -80,7 +80,7 @@ jobs:
           name: generate-apks
           path: app/build/outputs/apk
 
-      - name: Upload artifact to Firebase App Distribution
+      - name: Upload artifact to Firebase App Distribution - Mode DEBUG
         if: ${{github.event_name == 'push' || inputs.variants == 'debug'}}
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
@@ -90,7 +90,7 @@ jobs:
           file: app/build/outputs/apk/${{inputs.variants}}/app-${{inputs.variants}}.apk
           releaseNotes: ${{inputs.release_notes}}
 
-      - name: Upload artifact to Firebase App Distribution
+      - name: Upload artifact to Firebase App Distribution - Mode Release Unsigned
         if: ${{inputs.variants == 'release'}}
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:

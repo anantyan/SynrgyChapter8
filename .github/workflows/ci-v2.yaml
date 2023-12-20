@@ -1,4 +1,4 @@
-name: Android with Github Action - CI
+name: Distribute to Firebase Services
 
 on:
   workflow_dispatch:

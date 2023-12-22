@@ -16,7 +16,7 @@
 
 ### 📌 Description
 
-The challenge results from the intensive learning of chapter 7 - Which is where the project is about an application listing data about food and beverage recipes that can be seen in one handheld mobile android, as well as details on how to make it up to what tools and recipe ingredients are provided. Thank you for providing a limited free API service, and at least it can be used for learning.
+The challenge results from the intensive learning of chapter 8 - Which is where the project is about an application listing data about food and beverage recipes that can be seen in one handheld mobile android, as well as details on how to make it up to what tools and recipe ingredients are provided. Thank you for providing a limited free API service, and at least it can be used for learning.
 
 - https://spoonacular.com/food-api/docs/
 - https://api.imgbb.com/
